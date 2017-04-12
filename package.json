@@ -74,11 +74,11 @@
     "test:win": "cross-env MONGODB_VERSION=${MONGODB_VERSION:=3.2.6} MONGODB_STORAGE_ENGINE=mmapv1 NODE_ENV=test TESTING=1 jasmine",
     "coverage": "cross-env COVERAGE_OPTION='./node_modules/.bin/nyc' npm test",
     "coverage:win": "cross-env MONGODB_VERSION=${MONGODB_VERSION:=3.2.6} MONGODB_STORAGE_ENGINE=mmapv1 NODE_ENV=test TESTING=1 node ./node_modules/.bin/nyc ./node_modules/jasmine/bin/jasmine.js",
-    "start": "node ./bin/parse-server --",
+    "start": "node ./bin/parse-server",
     "prepublish": "npm run build"
   },
   "engines": {
-    "node": ">=4.6 <7.0",
+    "node": ">=4.6",
     "npm": ">=1.0.0"
   },
     
